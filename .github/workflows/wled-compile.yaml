@@ -36,7 +36,7 @@ jobs:
         echo '  ${env:esp32dev.lib_deps}' >>platformio.ini
         echo '  olikraus/U8g2 @ ^2.28.8' >>platformio.ini
         echo '  Wire' >>platformio.ini
-        echo '  arduinoFFT @ 1.9.2+sha.419d7b0 >>platformio.ini
+        echo '  arduinoFFT@^1.9.2+sha.419d7b0' >>platformio.ini
         
         pio run -e custom_build || pio run -e custom_build
     - name: Copy Files
